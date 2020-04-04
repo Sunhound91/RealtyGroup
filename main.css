@@ -66,7 +66,7 @@
               color:#10e698;
           }
           #bluey{
-              background-color:rgb(15, 15, 100);
+              background-color:rgba(24,45,69,1);
               width:100%;
               height:800px;
               display:flex;
@@ -86,7 +86,7 @@
           #prpBx{
             width:105%;
             height:95%;
-            background-color:rgba(4, 4, 46,1);
+            background-color:rgba(13,25,38,1);
             margin-top:3.5%;
             margin-bottom:3.5%;
             margin-left:-10%;
