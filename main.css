@@ -1,7 +1,7 @@
 @media only screen and (max-width: 900px){ 
     *{
         color:white;
-         border:1px solid black; 
+         /* border:1px solid black;  */
 
       }
       @keyframes slideRight {
@@ -82,6 +82,9 @@
           main.col header.col span:nth-of-type(4){
               font-size:3rem;
               color:#10e698;
+          }
+          #logo{
+              width:100%;
           }
           #bluey{
               background-color:rgba(24,45,69,1);
