@@ -1,8 +1,20 @@
-
-  @media only screen and (max-width: 480px){ 
+@media only screen and (max-width: 900px){ 
     *{
         color:white;
+         border:1px solid black; 
 
+      }
+      @keyframes slideRight {
+          from { transform: translateX(-200%); }
+          to{transform: translateX(0%);}
+      }
+      @keyframes holdPos{
+          from{transform: translateX(202.5%);}
+          to{transform:translateX(0%);}
+      }
+      @keyframes fadeIn{
+          from{opacity: 0;}
+          to{opacity:1;}
       }
           body{
               width:100%;
@@ -44,6 +56,12 @@
               line-height: 1.5rem;
           
           } 
+          header p{
+              /* visibility: hidden; */
+              /* animation-name: fadeIn; */
+              animation-duration: 4s;
+              animation-fill-mode: forwards;
+          }
           main.col header.col{
               align-items: flex-start;
               margin-left:5%;
@@ -77,27 +95,35 @@
               
           }
           #wtBrd{
+           /* visibility: hidden; */
            width:80%;
            height:80%;
            border:10px solid white;
            margin-right: -5%;
            margin-top:30%;
+           /* animation-name: slideRight; */
+           animation-duration: 3s;
           }
           #prpBx{
+            /* visibility: hidden; */
             width:105%;
             height:95%;
             background-color:rgba(13,25,38,1);
-            margin-top:3.5%;
-            margin-bottom:3.5%;
+             margin-top:3.5%; 
+             margin-bottom:3.5%;
             margin-left:-10%;
             display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             flex-wrap:wrap;
-           
+            /* animation-name: holdPos; */
+            animation-duration: 3s;
+            
           }
-         
+          #prpBx h1{
+              color:#10e698;
+          }
           #prpBx input{
               color:black;
               height:7%;
