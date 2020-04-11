@@ -1,9 +1,10 @@
-@media only screen and (max-width: 900px){ 
+@media only screen and (max-width: 460px){ 
     *{
         color:white;
          /* border:1px solid black;  */
 
       }
+     
       @keyframes slideRight {
           from { transform: translateX(-200%); }
           to{transform: translateX(0%);}
@@ -20,14 +21,14 @@
               width:100%;
               margin-top:-50px;
               margin-left:-.01%;
-              
+              margin-bottom:-200px;
           }
           nav{
               display: flex;
               justify-content: center;
           }
           #firstSect{
-            background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(https://images.unsplash.com/photo-1470075801209-17f9ec0cada6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+            background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(https://static.wixstatic.com/media/84770f_0018c709d8b74dfa93fd0cd11e139b8c~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/84770f_0018c709d8b74dfa93fd0cd11e139b8c~mv2_d_5760_3840_s_4_2.webp);
             background-size:cover;
             margin-bottom:-30%;
           }
@@ -108,25 +109,27 @@
               
               
           }
-          #wtBrd{
+          .wtBrd{
            /* visibility: hidden; */
            width:80%;
            height:80%;
            border:10px solid white;
+           min-height:561px;
            margin-right: -5%;
            margin-top:30%;
            /* animation-name: slideRight; */
            animation-duration: 3s;
            margin-bottom:15%;
           }
-          #prpBx{
+          .prpBx{
             /* visibility: hidden; */
             width:105%;
             height:95%;
             background-color:rgba(13,25,38,1);
              margin-top:3.5%; 
              margin-bottom:3.5%;
-            margin-left:-10%;
+            margin-left:-10%; 
+            min-height: 561px;
             display:flex;
             flex-direction: column;
             justify-content: center;
@@ -136,35 +139,175 @@
             animation-duration: 3s;
             
           }
-          #prpBx h1{
+          .prpBx h1{
               color:#10e698;
           }
-          #prpBx input{
-              color:black;
-              height:7%;
-              margin-bottom:5%;
-              width:70%;
-          }
-          #prpBx textarea{
+          .prpBx input[type=text]{
+            color:black;
+            margin-bottom:5%;
+            width:70%;
+        }
+          .prpBx textarea{
             color:black;
             width:70%;
-            height:20%;
+            
         }
-        #prpBx button{
+        .prpBx button{
             background-color:#10e698;
             color:white;
             width:72%;
-            height:7%;
             margin-top:5%;
             margin-bottom:5%;
         }
+        
         .col#success{
            margin:0% 5% 0% 5%;
         }
         .col#success > h1{
             color:black;
+            
         }
-        .col#success > p{
+        .col#success ol li{
             color:black;
+        }
+        .testImg{
+            max-height:800px;
+            max-width:100%;
+        }
+        #slideshow{
+            overflow: hidden;
+            justify-self: flex-end;
+        }
+        #slideshow figure{
+            position:relative;
+            width:300%;
+            margin:0;
+            left:0;
+            animation: 36s slider infinite; 
+            
+        }
+        #slideshow figure img{
+            width:33.33333%;
+            float:left; 
+            
+        }
+        #slideshow figure img:first-of-type{
+            animation:fader1 36s infinite;
+        }
+        #slideshow figure img:nth-of-type(2){
+            animation: fader2 36s infinite;
+        }
+        #slideshow figure img:nth-of-type(3){
+            animation: fader3 36s infinite;
+        }
+        @keyframes fader1 {
+            0% {
+                opacity:1;          
+             }
+            20% {
+                opacity:0;        
+            }
+            25% {
+                opacity:0;        
+            }
+            45% {
+                opacity:0;        
+            }
+            50% {
+                opacity:0;        
+            }
+            70% {
+                opacity:0;        
+            }
+            75% {
+                opacity:0;        
+            }
+            100% {
+                opacity:1;        
+            }
+        }
+        @keyframes fader2 {
+            0% {
+                opacity:0;                   
+             }
+            20% {
+                opacity: 1;        
+            }
+            25% {
+                opacity: 1;        
+            }
+            45% {
+                opacity: 0;        
+            }
+            50% {
+                opacity:0 ;        
+            }
+            70% {
+                opacity: 1;        
+            }
+            75% {
+                opacity: 1;        
+            }
+            100% {
+                opacity: 0;        
+            }
+        }
+        @keyframes fader3 {
+            0% {
+                opacity:0 ;                  
+             }
+            20% {
+                opacity:0 ;        
+            }
+            25% {
+                opacity: 0;        
+            }
+            45% {
+                opacity:1 ;        
+            }
+            50% {
+                opacity: 1;        
+            }
+            70% {
+                opacity: 0;        
+            }
+            75% {
+                opacity: 0;        
+            }
+           
+            100% {
+                opacity: 0;        
+            }
+        }
+        @keyframes slider {
+            0% {
+                left:0;           
+             }
+            20% {
+                left:-100%;
+            }
+            25% {
+                left:-100%;
+            }
+            45% {
+                left:-200%;
+            }
+            50% {
+                left:-200%;
+            }
+            70% {
+                left:-100%;
+            }
+            75% {
+                left:-100%;
+            }
+            95%{
+                left:0%;
+            }
+            100% {
+                left:0%;
+            }
+
+
         }
     }
