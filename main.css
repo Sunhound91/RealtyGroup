@@ -1,8 +1,6 @@
-@media only screen and (max-width: 460px){ 
+@media only screen and (max-width: 920px){ 
     *{
         color:white;
-         /* border:1px solid black;  */
-
       }
      
       @keyframes slideRight {
@@ -71,8 +69,6 @@
           
           } 
           header p{
-              /* visibility: hidden; */
-              /* animation-name: fadeIn; */
               animation-duration: 4s;
               animation-fill-mode: forwards;
           }
@@ -110,19 +106,16 @@
               
           }
           .wtBrd{
-           /* visibility: hidden; */
            width:80%;
            height:80%;
            border:10px solid white;
            min-height:561px;
            margin-right: -5%;
            margin-top:30%;
-           /* animation-name: slideRight; */
            animation-duration: 3s;
            margin-bottom:15%;
           }
           .prpBx{
-            /* visibility: hidden; */
             width:105%;
             height:95%;
             background-color:rgba(13,25,38,1);
@@ -135,27 +128,28 @@
             justify-content: center;
             align-items: center;
             flex-wrap:wrap;
-            /* animation-name: holdPos; */
             animation-duration: 3s;
             
           }
-          .prpBx h1{
+          .prpBx div.col h1{
               color:#10e698;
+              line-height: .5rem;
           }
           .prpBx input[type=text]{
             color:black;
             margin-bottom:5%;
-            width:70%;
+            width:80%;
         }
           .prpBx textarea{
             color:black;
-            width:70%;
+            width:80%;
             
         }
         .prpBx button{
             background-color:#10e698;
             color:white;
-            width:72%;
+            width:82%;
+            height:2em;
             margin-top:5%;
             margin-bottom:5%;
         }
@@ -199,6 +193,22 @@
         }
         #slideshow figure img:nth-of-type(3){
             animation: fader3 36s infinite;
+        }
+        #success{
+            overflow: hidden;
+        }
+        #footer{
+            margin-top:0px;
+            padding:5%;
+            min-height: 800px; 
+            background-size: 100% 100%; 
+            background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url("https://static.wixstatic.com/media/11062b_db132ca6141f4d65b2932519436a52bbf000.jpg/v1/fill/w_301,h_1080,al_c,q_80/11062b_db132ca6141f4d65b2932519436a52bbf000.webp%22%3E%3Cimg%20id=%22mediairn7u7vg1balatamediaimageimage%22%20style=%22width:%20320px;%20height:%201150px;%20object-fit:%20cover;%22%20alt=%22%22%20data-type=%22image%22%20itemprop=%22image%22%20src=%22https://static.wixstatic.com/media/11062b_db132ca6141f4d65b2932519436a52bbf000.jpg/v1/fill/w_301,h_1080,al_c,q_80/11062b_db132ca6141f4d65b2932519436a52bbf000.webp");
+            background-size:100% 100%;
+            
+        }
+        #footer div.col span{
+            color:#10e698;
+            font-size: 2em;
         }
         @keyframes fader1 {
             0% {
@@ -307,7 +317,5 @@
             100% {
                 left:0%;
             }
-
-
         }
     }
