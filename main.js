@@ -1,4 +1,3 @@
-
 var styleSheetRules= document.styleSheets[0].cssRules[0].cssRules;
 var slideRights= document.getElementsByClassName('slideRight');
 var holdPos=document.getElementsByClassName('holdPos');
